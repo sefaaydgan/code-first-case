@@ -1,0 +1,44 @@
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 20px 0;
+
+  .pagination-button {
+    padding: 10px 15px;
+    border: 2px solid $primary-border-color; // Mor sınır
+    border-radius: 8px;
+    background-color: $secondary-color; // Siyah arka plan
+    color: $text-color; // Açık gri yazı
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    &:hover:not(&.disabled) {
+      background-color: $primary-border-color; // Hover mor tonu
+      color: $white; // Beyaz yazı
+    }
+
+    &.active {
+      background-color: $primary-color; // Aktif mor tonu
+      color: $white; // Beyaz yazı
+      border-color: $primary-color;
+    }
+
+    &.non-clickable {
+      pointer-events: none;
+    }
+
+    &.disabled {
+      cursor: not-allowed;
+      color: $text-color-disabled;
+    }
+
+    &.notVisible {
+      display: none;
+    }
+  }
+}

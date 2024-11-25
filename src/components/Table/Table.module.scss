@@ -1,0 +1,62 @@
+
+.table-container {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+
+  table {
+    width: 80%;
+    border-collapse: collapse;
+    background-color: $secondary-color; // Siyah ton
+    color: $text-color; // Açık gri yazı
+    border-radius: 8px;
+    overflow: hidden;
+
+    thead {
+      background-color: $primary-color; // Mor başlık
+      text-align: left;
+
+      th {
+        padding: 12px;
+        font-weight: bold;
+        color: $text-color;
+      }
+    }
+
+    tbody {
+      tr {
+        cursor: pointer;
+        text-align: left;
+
+        &:nth-child(even) {
+          background-color: $light1-primary-border-color; // Hafif mor çizgiler
+        }
+
+        &:hover {
+          background-color: $light2-primary-border-color; // Hover efekti
+        }
+
+        td {
+          padding: 12px;
+          border-bottom: 1px solid $border-color; // Hafif gri çizgiler
+          .spinner {
+            height: 100%;
+          }
+          &.noResult {
+            width: 100%;
+            text-align: center;
+            height: 200px;
+
+            p {
+              margin-top: 20px;
+            }
+          }
+        }
+
+
+      }
+    }
+  }
+}
+
+

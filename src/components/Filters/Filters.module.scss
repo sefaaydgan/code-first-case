@@ -1,0 +1,43 @@
+
+.filters {
+  display: flex;
+  width: 80%;
+  margin: 0 auto 20px;
+  gap: 20px;
+
+  .search-input {
+    flex: 2
+  }
+
+  select {
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid $primary-border-color; // Mor sınır
+    border-radius: 8px;
+    background-color: $secondary-color; // Siyah ton
+    color: $text-color; // Açık gri yazı
+    outline: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    -webkit-appearance: none !important;
+    -moz-appearance: none !important;
+    padding-right: 40px;
+    background-image: url(../../assets/icons/icon-caret-down.svg);
+    background-position: 95%;
+    background-repeat: no-repeat;
+
+    &::placeholder {
+      color: $placeholder-color; // Placeholder yazısı
+    }
+
+    &:focus {
+      border-color: $primary-color; // Odakta parlak mor
+      box-shadow: 0 0 5px $primary-color;
+    }
+
+    option {
+      background-color: $secondary-color; // Dropdown arka planı
+      color: $text-color; // Yazı
+    }
+  }
+}

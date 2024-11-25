@@ -1,0 +1,30 @@
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  flex: 1;
+
+  input {
+    width: 100%;
+    height: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid $primary-border-color; // Mor ton
+    border-radius: 8px;
+    background-color: $secondary-color; // Siyah ton
+    color: $text-color; // Açık gri yazı
+    outline: none;
+    transition: all 0.3s ease;
+
+    &::placeholder {
+      color: $placeholder-color; // Placeholder yazısı
+    }
+
+    &:focus {
+      border-color: $primary-color; // Odakta daha belirgin mor
+      box-shadow: 0 0 5px $primary-color;
+    }
+  }
+}
+

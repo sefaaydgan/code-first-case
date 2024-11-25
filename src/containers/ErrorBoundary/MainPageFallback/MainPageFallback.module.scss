@@ -1,0 +1,27 @@
+.wrapper{
+  margin: auto;
+  width: 80%;
+  height: 40vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  button {
+    margin-top: 20px;
+    background: $primary-button-color;
+    color: $primary-button-text;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 15px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+
+    &:hover {
+      background: $primary-button-hover-color;
+      color: $primary-button-hover-text-color;
+    }
+  }
+}
