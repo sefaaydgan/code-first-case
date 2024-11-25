@@ -26,4 +26,18 @@ After the installation, run this to start the development server:
 
 Visit http://localhost:5173 to view my app.
 
+## About project
+
+I divided the project into 2 subdirectories using React Router. The first one is the landing page. On this page, there is a table where I fetch the data of all movies and implement pagination. In this case, as requested, there is an input for searching by movie names, a second input for filtering by year, and a select input listing the available genres for searching. Additionally, loading and no result screens have been added to the table.
+
+When clicking on any movie in the table, it redirects to the movie's detail page. On the detail page, all details related to the movie are listed. A button is also added to redirect back to the main page.
+
+Then, I deployed my project to Vercel.
+
+[My Project on Vercel](https://code-first-case.vercel.app)
+
+### Contact
+
+If you encounter any issues, please feel free to contact me via [email](mailto:sefaydogan@outlook.com) or [LinkedIn](https://www.linkedin.com/messaging/compose/?recipient=sefaaydogan).
+
 

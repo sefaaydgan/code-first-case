@@ -33,7 +33,7 @@ const MainPage = () => {
   }
   return (
     <div className={styles.wrapper}>
-      <h1>Movie Search App</h1>
+      <h1>Movie Search App via Omdbapi</h1>
       <Filters/>
       <Table loading={loading}/>
       <Pagination

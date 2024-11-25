@@ -10,9 +10,10 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<ErrorBoundary FallbackUI={MainPageFallback}>
-          <MainPage/>
-        </ErrorBoundary>}/>
+        <Route path="/"
+               element={<ErrorBoundary FallbackUI={MainPageFallback}>
+                 <MainPage/>
+               </ErrorBoundary>}/>
         <Route path="/movie/:id"
                element={<ErrorBoundary FallbackUI={MovieDetailPageFallback}>
                  <MovieDetailPage/>
