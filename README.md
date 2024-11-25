@@ -32,6 +32,8 @@ I divided the project into 2 subdirectories using React Router. The first one is
 
 When clicking on any movie in the table, it redirects to the movie's detail page. On the detail page, all details related to the movie are listed. A button is also added to redirect back to the main page.
 
+In the case, since it was requested to search for "Pokemon" by default, I wrote a custom hook to initially set the search parameter. This hook both updates the URL and sends a request using the search parameter.
+
 Then, I deployed my project to Vercel.
 
 [My Project on Vercel](https://code-first-case.vercel.app)
