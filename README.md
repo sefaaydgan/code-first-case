@@ -38,6 +38,5 @@ Then, I deployed my project to Vercel.
 
 ### Contact
 
-If you encounter any issues, please feel free to contact me via [email](mailto:sefaydogan@outlook.com) or [LinkedIn](https://www.linkedin.com/messaging/compose/?recipient=sefaaydogan).
-
+If you encounter any issues, please feel free to contact me via [LinkedIn](https://www.linkedin.com/messaging/compose/?recipient=sefaaydogan) or send a mail to `sefaydogan@outlook.com`
 
